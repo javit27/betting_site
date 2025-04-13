@@ -1,6 +1,7 @@
 import os
 from flask import Flask, render_template, jsonify
 import pandas as pd
+from datetime import datetime
 
 app = Flask(__name__)
 
@@ -16,8 +17,8 @@ def load_results():
 
 @app.route("/")
 def home():
-    results = load_results()
-    return render_template("index.html", results=results)
+    results = load_results()  # however you're getting results
+    return render_template("index.html", results=results, now=datetime.now())
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=port)  # Ensure it's binding to 0.0.0.0 and the right port
