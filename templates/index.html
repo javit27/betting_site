@@ -22,25 +22,31 @@
   </header>
 
   <div class="container">
-    <h2>Latest Predictions</h2>
+    <h2>2024 Week 22</h2>
     <table>
-      <thead>
-        <tr>
-          <th>Player</th>
-          <th>Tackles</th>
-          <th>Prediction</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for result in results %}
+        <thead>
           <tr>
-            <td>{{ result['player'] }}</td>
-            <td>{{ result['tackles'] }}</td>
-            <td>{{ result['prediction'] }}</td>
+            {% for column in results[0].keys() %}
+              <th>{{ column }}</th>
+            {% endfor %}
           </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+            {% for result in results %}
+              <tr>
+                {% for key, value in result.items() %}
+                  <td>
+                    {% if key in ['pred_win_pct', 'expected_return'] %}
+                      {{ (value * 100) | round(1) }}%
+                    {% else %}
+                      {{ value }}
+                    {% endif %}
+                  </td>
+                {% endfor %}
+              </tr>
+            {% endfor %}
+          </tbody>
+      </table>
   </div>
 
   <footer>

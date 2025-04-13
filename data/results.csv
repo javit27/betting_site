@@ -1,5 +1,21 @@
-player,tackles,prediction
-Player A,7,Over
-Player B,4,Under
-Player C,6,Over
-Player D,3,Under
+﻿player,position,team,opponent,season,week,bookmaker,bet_type,line,odds,pred_win_pct,expected_return,Actual Tackles,Outcome
+Drue Tranquill,LB,KC,PHI,2024,22,BetMGM,Under,3.5,120,0.620468,0.365029,7,L
+Justin Reid,DB,KC,PHI,2024,22,BetMGM,Under,3.5,125,0.577467,0.299301,5,L
+Oren Burks,LB,PHI,KC,2024,22,BetMGM,Under,5.5,100,0.627725,0.25545,3,W
+Nick Bolton,LB,KC,PHI,2024,22,BetMGM,Under,4.5,115,0.571758,0.229279,4,W
+Quinyon Mitchell,DB,PHI,KC,2024,22,BetMGM,Over,2.5,100,0.581902,0.163803,3,W
+Jalen Carter,DL,PHI,KC,2024,22,BetMGM,Under,1.5,105,0.561188,0.145143,0,W
+Zack Baun,LB,PHI,KC,2024,22,BetMGM,Under,6.5,-155,0.6575,0.081693,3,W
+Nolan Smith,LB,PHI,KC,2024,22,BetMGM,Under,2.5,-118,0.580986,0.073347,0,W
+Reed Blankenship,DB,PHI,KC,2024,22,BetMGM,Under,4.5,-140,0.606029,0.038907,1,W
+Cooper DeJean,DB,PHI,KC,2024,22,BetMGM,Under,3.5,-125,0.576389,0.037501,3,W
+Josh Sweat,LB,PHI,KC,2024,22,BetMGM,Under,1.5,-155,0.594284,-0.022308,2,L
+C.J. Gardner-Johnson,DB,PHI,KC,2024,22,BetMGM,Under,3.5,-155,0.579991,-0.045821,1,W
+Jaden Hicks,DB,KC,PHI,2024,22,BetMGM,Over,2.5,100,0.536282,-0.059964,3,W
+Jaden Hicks,DB,KC,PHI,2024,22,BetMGM,Under,2.5,-130,0.553168,-0.062339,3,L
+Darius Slay,DB,PHI,KC,2024,22,BetMGM,Under,3.5,-175,0.586347,-0.078598,2,W
+Trent McDuffie,DB,KC,PHI,2024,22,BetMGM,Over,3.5,130,0.51484,-0.093144,4,W
+Trent McDuffie,DB,KC,PHI,2024,22,BetMGM,Under,3.5,-175,0.574317,-0.097503,4,L
+C.J. Gardner-Johnson,DB,PHI,KC,2024,22,BetMGM,Over,3.5,120,0.50903,-0.177616,2,L
+Darius Slay,DB,PHI,KC,2024,22,BetMGM,Over,3.5,130,0.502495,-0.193188,2,L
+Jalen Carter,DL,PHI,KC,2024,22,BetMGM,Over,1.5,-140,0.528189,-0.24332,0,L

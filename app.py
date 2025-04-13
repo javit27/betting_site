@@ -17,7 +17,8 @@ def load_results():
 
 @app.route("/")
 def home():
-    results = load_results()  # however you're getting results
+    results_df = pd.read_csv("data/results.csv")
+    results = results_df.to_dict(orient="records")
     return render_template("index.html", results=results, now=datetime.now())
 
 if __name__ == "__main__":
