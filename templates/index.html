@@ -35,13 +35,20 @@
             {% for result in results %}
               <tr>
                 {% for key, value in result.items() %}
-                  <td>
-                    {% if key in ['pred_win_pct', 'expected_return'] %}
-                      {{ (value * 100) | round(1) }}%
+                  {% if key == 'Outcome' %}
+                    {% set outcome_str = value|string %}
+                    {% if outcome_str == 'W' %}
+                      <td style="background-color: #d4edda;">{{ value }}</td>
+                    {% elif outcome_str == 'L' %}
+                      <td style="background-color: #f8d7da;">{{ value }}</td>
                     {% else %}
-                      {{ value }}
+                      <td>{{ value }}</td>
                     {% endif %}
-                  </td>
+                  {% elif key in ['pred_win_pct', 'expected_return'] %}
+                    <td>{{ (value * 100) | round(1) }}%</td>
+                  {% else %}
+                    <td>{{ value }}</td>
+                  {% endif %}
                 {% endfor %}
               </tr>
             {% endfor %}
